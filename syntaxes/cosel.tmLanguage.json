@@ -1,0 +1,97 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+    "name": "CoSeL",
+    "scopeName": "source.cosel",
+    "fileTypes": ["csl", "csm"],
+    "patterns": [
+        {
+            "include": "#comments"
+        },
+        {
+            "include": "#strings"
+        },
+        {
+            "include": "#keywords"
+        },
+        {
+            "include": "#constants"
+        },
+        {
+            "include": "#operators"
+        },
+        {
+            "include": "#numbers"
+        }
+    ],
+    "repository": {
+        "comments": {
+            "patterns": [
+                {
+                    "name": "comment.line.double-slash.cosel",
+                    "match": "//.*"
+                },
+                {
+                    "name": "comment.block.cosel",
+                    "begin": "/\\*",
+                    "end": "\\*/"
+                }
+            ]
+        },
+        "strings": {
+            "patterns": [
+                {
+                    "name": "string.quoted.double.cosel",
+                    "begin": "\"",
+                    "end": "\"",
+                    "patterns": [
+                        {
+                            "match": "\\\\[\"\\\\nt]"
+                        }
+                    ]
+                },
+                {
+                    "name": "string.quoted.single.cosel",
+                    "begin": "'",
+                    "end": "'",
+                    "patterns": [
+                        {
+                            "match": "\\\\['\\\\\\n\\t]"
+                        }
+                    ]
+                }
+            ]
+        },
+        "keywords": {
+            "patterns": [
+                {
+                    "name": "keyword.control.cosel",
+                    "match": "\\b(?:if|else|for|while|do|switch|case|break|continue|return|true|false)\\b"
+                }
+            ]
+        },
+        "constants": {
+            "patterns": [
+                {
+                    "name": "constant.language.cosel",
+                    "match": "\\b(?:null)\\b"
+                }
+            ]
+        },
+        "operators": {
+            "patterns": [
+                {
+                    "name": "keyword.operator.cosel",
+                    "match": "\\+|-|\\*|\\/|%|==|!=|<=|>=|<|>|=|&&|\\|\\|"
+                }
+            ]
+        },
+        "numbers": {
+            "patterns": [
+                {
+                    "name": "constant.numeric.cosel",
+                    "match": "\\b\\d+(\\.\\d+)?\\b"
+                }
+            ]
+        }
+    }
+}

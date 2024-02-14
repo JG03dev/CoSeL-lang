@@ -1,0 +1,30 @@
+{
+    "comments": {
+        "lineComment": "//",
+        "blockComment": ["/*", "*/"]
+    },
+    "brackets": [
+        ["{", "}"],
+        ["[", "]"],
+        ["(", ")"]
+    ],
+    "autoClosingPairs": [
+        {"open": "{", "close": "}"},
+        {"open": "[", "close": "]"},
+        {"open": "(", "close": ")"},
+        {"open": "\"", "close": "\"", "notIn": ["string"]},
+        {"open": "'", "close": "'", "notIn": ["string"]}
+    ],
+    "surroundingPairs": [
+        {"open": "{", "close": "}"},
+        {"open": "[", "close": "]"},
+        {"open": "(", "close": ")"},
+        {"open": "\"", "close": "\"", "notIn": ["string"]},
+        {"open": "'", "close": "'", "notIn": ["string"]}
+    ],
+    "indentationRules": {
+        "increaseIndentPattern": "^\\s*(comp_if|comp_else|comp_end|fun|macro|asm|for|while|if|else|do|try|catch|switch|proc|case|default)\\b.*\\{[^}\"']*",
+        "decreaseIndentPattern": "^\\s*\\}",
+        "unIndentedLinePattern": "^\\s*(comp_if|comp_else|comp_end|fun|macro|asm|for|while|if|else|do|try|catch|switch|proc|case|default)\\b.*\\{[^}\"']*\\}$"
+    }
+}
