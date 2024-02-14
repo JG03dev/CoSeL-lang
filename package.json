@@ -1,30 +1,44 @@
 {
-  "name": "cosel-lang",
-  "displayName": "CoSeL",
-  "description": "Syntax Highlighting for CoSeL language",
-  "version": "1.0.0",
-  "publisher": "JG03dev",
-  "engines": {
-    "vscode": "^1.86.0"
-  },
-  "categories": [
-    "Programming Languages"
-  ],
-  "contributes": {
-    "languages": [{
-      "id": "cosel",
-      "aliases": ["CoSeL", "cosel"],
-      "extensions": [".csm",".csl"],
-      "configuration": "./language-configuration.json"
-    }],
-    "grammars": [{
-      "language": "cosel",
-      "scopeName": "source.csm, source.csl",
-      "path": "./syntaxes/cosel.tmLanguage.json"
-    }]
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/JG03dev/CoSeL-lang.git"
-  }
+	"name": "cosel-lang",
+	"displayName": "CoSeL",
+	"description": "Syntax Highlighting for CoSeL language",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.86.0"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"icon": "logo.ico",
+	"license": "see LICENSE.md",
+	"contributes": {
+		"languages": [
+			{
+				"id": "cosel",
+				"aliases": [
+					"CoSeL",
+					"cosel"
+				],
+				"extensions": [
+					".csm",
+					".csl"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "cosel",
+				"scopeName": "source.cosel",
+				"path": "./syntaxes/cosel.tmLanguage.json"
+			}
+		]
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/JG03dev/CoSeL-lang.git"
+	},
+	"__metadata": {
+		"installedTimestamp": 1707836684202
+	}
 }

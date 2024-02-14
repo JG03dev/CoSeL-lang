@@ -32,10 +32,11 @@ This extension was inspired by the CoSeL syntax highlighting provided in Notepad
 
 Users appreciate release notes as you update your extension.
 
-### 1.0.0
+## Release Notes
 
-Initial transcription
+### 0.0.1
 
+Initial release of CoSeL Syntax Highlighting Extension
 ---
 
 **Enjoy!**
