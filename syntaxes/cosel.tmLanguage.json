@@ -91,7 +91,7 @@
             "patterns": [
                 {
                     "name": "keyword.control",
-                    "match": "\\b(Switch|Others|comp_if|comp_else|comp_end)\\b"
+                    "match": "\\b(asm|break|continue|else|for|goto|if|return|coerce|while|cimport|try|catch|new|typep|Search|do|priority|Found|Finally|throw|Throw|from|hide|private|overload|cover|NoRedefine|Void|NodeTypeOf|AFun|AProc|APlace|AThrower|FunClosure|ProcClosure|PlaceClosure|ThrowerClosure|This|custom|LexicalExtent|ReadOnly|div|TypeOf)\\b"
                 }
             ]
         },
@@ -99,7 +99,7 @@
             "patterns": [
                 {
                     "name": "keyword.declaration",
-                    "match": "\\b(BNF_PARSER|TERMINALS|BNF|rule|fun|macro|place|sform|type|const|var|proc|label|let|in|coercion|thrower|constructor|Rule|Fun|Macro|Place|Sform|Type|Const|Var|Proc|Label|Let|In|Coercion|Thrower|Constructor)\\b"
+                    "match": "\\b(public|Var|var|fun|Fun|macro|place|sform|type|const|proc|Proc|label|Switch|Others|Let|In|Coercion|Thrower|Constructor)\\b"
                 }
             ]
         },
@@ -115,7 +115,15 @@
             "patterns": [
                 {
                     "name": "storage.type",
-                    "match": "\\b(Bool|Link|Real|char|Int|Node|NodeRef|Whole|NodeType)\\b"
+                    "match": "\\b(Bool|Link|Real|Char|Int|Node|NodeRef|Whole|NodeType|bool|link|real|char|int|node|nodeRef|whole|nodeType)\\b"
+                }
+            ]
+        },
+        "modifiers": {
+            "patterns": [
+                {
+                    "name": "storage.modifier",
+                    "match": "\\b()\\b"
                 }
             ]
         },
@@ -177,7 +185,7 @@
             "patterns": [
                 {
                     "name": "keyword.operator",
-                    "match": "\\b(::=|<-|\\+\\+|--|\\[|\\]|/|\\*|\\+|-|:|,|;|\\.|\\|\\||\\||&&|&|=>|=|<=|>=|<|>|!|~|\\?=|\\.\\.\\.|\\.\\.|\\(|\\)|@|\\$|div)\\b"
+                    "match": "\\b(::=|::|<-|\\+\\+|--|\\[|\\]|/|\\*|\\+|-|:|,|;|\\.|\\|\\||\\||&&|&|=>|=|<=|>=|<|>|!|~|\\?=|\\.\\.\\.|\\.\\.|\\(|\\)|@|\\$|div)\\b"
                 }
             ]
         },
