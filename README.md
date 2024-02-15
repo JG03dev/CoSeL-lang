@@ -16,6 +16,28 @@ You can install this extension directly from the Visual Studio Code Marketplace 
 
 Once the extension is installed, it will automatically highlight CoSeL syntax in your `.csl` and `.csm` files.
 
+
+## Roadmap
+
+**Highlighting CoSeL Syntax:**
+- Keywords1 ✅
+- Keywords2 ✅
+- Keywords3 ❌
+- Keywords4 ✅
+- Keywords6 ❌
+- Keywords7 ❌
+- Keywords8 ❌
+- Operators ✅
+- Delimiters✅
+- Comments  ✅
+
+**Highlighting LOOS/LOOS+**
+
+**Compile time highlighting**
+- Variables
+- Classes
+- Includes
+
 ## Contributing
 
 If you encounter any issues, have suggestions for improvements, or want to contribute to the development of this extension, please feel free to [open an issue](https://github.com/JG03dev/CoSeL-lang/issues) or [create a pull request](https://github.com/JG03dev/CoSeL-lang/pulls).
