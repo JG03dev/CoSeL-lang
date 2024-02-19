@@ -56,9 +56,15 @@ Users appreciate release notes as you update your extension.
 
 ## Release Notes
 
+### 0.1.0
+
+Publishing extension
+Minor tweaks inspired by Notepad++ extension
+
 ### 0.0.1
 
 Initial release of CoSeL Syntax Highlighting Extension
+
 ---
 
 **Enjoy!**

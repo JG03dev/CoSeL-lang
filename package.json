@@ -2,7 +2,7 @@
 	"name": "cosel-lang",
 	"displayName": "CoSeL",
 	"description": "Syntax Highlighting for CoSeL language",
-	"version": "0.0.1",
+	"version": "0.1.0",
 	"publisher": "jg03dev",
 	"engines": {
 		"vscode": "^1.86.0"
